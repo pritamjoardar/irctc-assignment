@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './styles/home.scss'
 import { Button } from './ui/button';
 import { toast } from 'sonner'
@@ -25,7 +25,6 @@ const BookingDetails = () => {
     const [bookingId, setBookingId] = useState<number>(0);
 
     const bookingDetails = async () => {
-        console.log("HEL;LO ")
         if (!bookingId) {
             toast.error('Please enter your booking id')
             return;
